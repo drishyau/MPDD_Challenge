@@ -64,6 +64,12 @@ Final evaluation score for Track2:
 
 ---
 
+### Key Observations
+1. CNN models consistently outperform other architectures across tasks
+2. Binary classification yields better results than ternary classification
+3. Longer sequence length (5s vs 1s) improves performance in binary tasks
+4. Conformer Fusion shows competitive results in ternary classification
+
 
 ### **9. Contact**
 If you have any questions or suggestions about the project, feel free to create an issue in the repository or contact the project maintainers at drishyau@iiitd.ac.in.
