@@ -98,32 +98,39 @@ MPDD_Code/
 
 ### 2. Installation
 Clone repository
+```
 git clone https://github.com/yourusername/alzheimer-prediction.git
-cd alzheimer-prediction
+cd MPDD_Code
+```
+
 ### 3. Configure Your Model
 Edit the YAML configuration under MPDD_Code/scripts/Track2/ for training, or MPDD_Code/scripts/ for testing.
 Specify your model in the code, for example:
+```
 model = CNN(opt)
+```
 Adjust other settings (batch size, epochs, learning rate, etc.) as needed in your YAML file.
 
 ### 4. Training
 
 Run the training script with your chosen configuration:
+```
 python3 train.py --config=MPDD_Code/scripts/Track2/binary_5s_track2.yaml
+```
  Results will be saved in the output folder specified in your YAML file.
 
 ### 5. Testing
 In test.py, specify the model you want to evaluate.
 Use the relevant YAML file for testing:
+```
 python3 test.py --config=MPDD_Code/scripts/test.yaml
+```
 Test results will also be saved as per the YAML configuration.
 
 ### Tips & Best Practices
 Ensure your data paths and output directories are correctly set in the YAML files.
 For experimenting with different models, simply change the model assignment in your code and update the YAML config as needed.
 Check logs and saved results for performance metrics and model checkpoints.
-
-
 
 ### Key Observations
 1. CNN models consistently outperform other architectures across tasks
