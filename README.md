@@ -82,6 +82,7 @@ Final evaluation score for Track2:
 ## 🛠️ Setup & Execution
 
 ### 1. Project Structure
+```
 MPDD_Code/
 ├── models/
 │   └── our/
@@ -93,6 +94,7 @@ MPDD_Code/
 ├── train.py                        # <--- Training entry point
 ├── test.py                         # <--- Testing entry point
 
+```
 
 ### 2. Installation
 Clone repository
