@@ -1,6 +1,6 @@
 ## MPDD_Challenge
-**Author:** drishyau  
-**Date:** October 2024  
+**Author:** Drishya Uniyal  
+**Date:** June 2025  
 
 ## MPDD Challenge: Dataset and Evaluation Metrics
 
@@ -77,8 +77,6 @@ Final evaluation score for Track2:
 
 ---
 
----
-
 ## 🛠️ Setup & Execution
 
 ### 1. Project Structure
@@ -99,7 +97,7 @@ MPDD_Code/
 ### 2. Installation
 Clone repository
 ```
-git clone https://github.com/yourusername/alzheimer-prediction.git
+git clone [https://github.com/yourusername/alzheimer-prediction.git](https://github.com/drishyau/MPDD_Challenge.git)
 cd MPDD_Code
 ```
 
