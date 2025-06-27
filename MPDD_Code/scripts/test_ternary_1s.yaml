@@ -1,0 +1,22 @@
+
+# Default Training Parameters
+data_rootpath: "/home/hiddenrock/DepressionDetection/TestData/MPDD-Young"
+train_model: "/home/hiddenrock/DepressionDetection/MPDD/checkpoints/1s_3labels_mfccs+densenet/best_model_2025-06-12-13.03.30.pth"
+test_json: "/home/hiddenrock/DepressionDetection/TestData/MPDD-Young/labels/Testing_files.json"
+personalized_features_file: "/home/hiddenrock/DepressionDetection/TestData/MPDD-Young/individualEmbedding/descriptions_embeddings_with_ids.npy"
+audiofeature_method: "mfccs" # Audio feature type, options {wav2vec, opensmile, mfccs}
+videofeature_method: "densenet" # Video feature type, options {openface, resnet, densenet}
+splitwindow_time: "1s" # Window duration, options {"1s", "5s"}
+labelcount: 3 # Number of label categories, options {2, 3, 5}
+track_option: "Track2"
+feature_max_len: 25 # Set maximum feature length; pad with zeros if insufficient, truncate if exceeding. For Track1, options {26, 5}; for Track2, options {25, 5}
+batch_size: 8
+use_personalized: false
+device: "cuda:2"
+seed: 3407
+lr: 1e-4
+# use_wav2vec: true
+# wav2vec_model: "facebook/wav2vec2-large-robust"
+# freeze_wav2vec: true
+
+

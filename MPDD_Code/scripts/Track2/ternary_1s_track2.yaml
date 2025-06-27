@@ -1,0 +1,33 @@
+labelcount: 3
+track_option: "Track2"
+feature_max_len: 25
+data_rootpath: "/home/hiddenrock/MPDD/MPDD-Young"
+train_json: "/home/hiddenrock/DepressionDetection/MPDD-Young/Training/labels/Training_Validation_files.json"
+test_json:
+personalized_features_file: "/home/hiddenrock/DepressionDetection/MPDD-Young/Training/individualEmbedding/descriptions_embeddings_with_ids.npy"
+use_personalized: false
+
+
+# use_wav2vec: true
+# wav2vec_model: "facebook/wav2vec2-large-robust"
+# freeze_wav2vec: true
+
+
+audiofeature_method: "mfccs"
+videofeature_method: "densenet"
+splitwindow_time: "1s"
+batch_size: 32
+lr: 0.000026  #1e-4 best
+num_epochs: 500
+
+lr_policy: "step"         # or "plateau", "lambda", etc.
+lr_decay_step: 10         # if using a step scheduler, the epoch interval for decaying the LR
+lr_decay_gamma: 0.1       # the decay factor
+
+
+device: "cuda:2"
+seed: 3407
+# Additional configuration for your model and logging
+checkpoints_dir: "./checkpoints"
+log_dir: "./logs"
+
